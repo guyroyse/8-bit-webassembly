@@ -53,7 +53,6 @@
       (local.set $counter (i32.add (local.get $counter) (i32.const 1)))
 
       ;; continue loop if counter is less then 256_000
-
       (br_if $loop (i32.lt_u (local.get $counter) (i32.const 256_000)))
     )
 
